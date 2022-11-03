@@ -7,6 +7,7 @@
 body #app {
   width: 100%;
   height: 100%;
+  font-size: 14px;
 }
 
 #mainNavbar {
@@ -15,12 +16,18 @@ body #app {
   max-width: 1617px;
   background-color: #002d2d;
   padding: 0 98px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
 }
 
 .page-container {
+  width: 100%;
+  height: 100%;
   max-width: 1617px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 #mainNavbar .nav-link {
@@ -59,16 +66,155 @@ body #app {
   box-shadow: 0 5px 25px 0 rgb(0 0 0 / 25%);
 }
 .btn:active {
-  color: white;
-  border: 0.125rem solid #008060;
+  color: white !important;
+  border: 0.125rem solid #008060 !important;
   background-color: transparent !important;
-  box-shadow: 0 5px 25px 0 rgb(0 0 0 / 25%);
+  box-shadow: 0 5px 25px 0 rgb(0 0 0 / 25%) !important;
 }
 .btn:focus {
   color: white;
   border: 0.125rem solid #008060;
   background-color: transparent !important;
   box-shadow: 0 5px 25px 0 rgb(0 0 0 / 25%);
+}
+
+.el-1 {
+  background-color: #002d2d;
+}
+
+.btn-second {
+  font-size: 1.0625rem;
+  color: white;
+  height: 49px;
+  background-color: #008060;
+  border: none;
+  box-shadow: none;
+  transition: background-color 0.3s;
+}
+
+.btn-second:hover {
+  color: white;
+  background-color: #004c3f;
+  border: none;
+  box-shadow: none;
+}
+.btn-second:active {
+  color: white;
+  border: 0.125rem solid #008060 !important;
+  background-color: transparent !important;
+}
+.btn-second:focus {
+  color: white;
+  border: 0.125rem solid #008060;
+  background-color: transparent !important;
+}
+
+.content-1 {
+  font-size: 4.5em;
+  line-height: 4.455rem;
+  font-weight: 800;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+}
+
+.content-2 {
+  font-size: 18px;
+  line-height: 1.33333125;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+}
+
+.content-3 {
+  font-size: 3.75em;
+  line-height: 4.5rem;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+}
+
+.carousel {
+  background-color: #8d227e;
+  border-radius: 1.875rem;
+  position: relative;
+}
+
+.span-content {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2rem;
+  display: block;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+}
+
+.span-img {
+  max-width: 957px;
+  max-height: 498px;
+  box-sizing: content-box;
+}
+
+.absolute {
+  position: absolute;
+  left: 3rem;
+  top: 2.375rem;
+  font-size: 1.375em;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  line-height: 1.33333;
+}
+
+@media screen and (max-width: 1399px) {
+  .content-1 {
+    font-size: 3em;
+    line-height: 4rem;
+  }
+
+  .content-3 {
+    font-size: 3.75em;
+    line-height: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content-1 {
+    line-height: 3.5rem;
+  }
+
+  .content-3 {
+    font-size: 3em;
+    line-height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #mainNavbar {
+    height: 60px;
+  }
+
+  .content-1 {
+    line-height: 3rem;
+  }
+
+  .content-3 {
+    font-size: 2em;
+    line-height: 2.125rem;
+  }
+
+  .pe-32rem {
+    padding-right: 0px !important;
+  }
+
+  .span-img {
+    display: none;
+  }
+}
+
+@media (min-width: 1130px) and (max-width: 1450px) {
+  .span-img {
+    max-height: 28.4375em !important;
+  }
+}
+
+.pt-4rem {
+  padding-top: 4rem;
+}
+
+.pt- .pe-32rem {
+  padding-right: 32rem;
 }
 
 @import "bootstrap/dist/css/bootstrap.css";
