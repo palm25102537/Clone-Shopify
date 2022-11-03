@@ -203,9 +203,10 @@ body #app {
   }
 }
 
-@media (min-width: 1130px) and (max-width: 1450px) {
+@media (min-width: 900px) and (max-width: 1450px) {
   .span-img {
     max-height: 28.4375em !important;
+    padding-top: 80px;
   }
 }
 
